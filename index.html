@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- 
+  Declaração do tipo de documento.
+  Todo documento HTML5 começa com esta linha.
+-->
+<html lang="pt-BR">
+<!-- 
+  Tag <html>: raiz do documento.
+  lang="pt-BR" indica que o conteúdo está em português do Brasil.
+-->
+
+<head>
+  <!-- 
+    <head>: contém informações sobre a página (não aparecem na tela).
+    Aqui ficam: título, links para CSS, meta tags, etc.
+  -->
+  <meta charset="UTF-8">
+  <!-- charset=UTF-8 permite usar acentos e caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport: ajuda a página a se adaptar em celulares -->
+  <title>Raycicles</title>
+  <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Link para o arquivo CSS que estiliza a página -->
+</head>
+
+<body>
+  <!-- 
+    <body>: contém todo o conteúdo visível da página.
+    Tudo que o usuário vê fica dentro do body.
+  -->
+
+  <!-- ========== HEADER ========== -->
+  <!-- 
+    Header: cabeçalho da página.
+    Geralmente contém logo e menu de navegação.
+    Usamos "class" para dar um nome ao elemento e estilizá-lo no CSS.
+  -->
+  <header class="header">
+    <div class="header-conteudo">
+      <!-- div: "division" - agrupa elementos sem significado especial -->
+      <h1 class="logo">Raycicles</h1>
+      <!-- h1: título principal (só um por página é o ideal) -->
+
+      <nav class="menu">
+        <!-- nav: seção de navegação com links -->
+        <a href="#home" class="menu-link">Home</a>
+        <a href="#sobre" class="menu-link">Sobre</a>
+        <a href="#servicos" class="menu-link">Serviços</a>
+        <a href="#contato" class="menu-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== SEÇÃO HERO (Principal) ========== -->
+  <!-- 
+    section: agrupa conteúdo relacionado.
+    id: identificador único (usado nos links do menu para rolar até aqui).
+  -->
+  <section id="home" class="hero">
+    <div class="hero-conteudo">
+      <h2 class="hero-titulo">Sua bicicleta pronta para pedalar, sem dor de cabeça!</h2>
+      <!-- h2: subtítulo -->
+      <p class="hero-texto">
+        Manutenção rápida, revisão completa e ajustes profissionais para você pedalar com segurança e desempenho.
+      </p>
+      <!-- p: parágrafo -->
+      <a href="#sobre" class="botao">Quero revisar minha bike.</a>
+      <!-- a: link. href="#sobre" leva à seção Sobre na mesma página -->
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO SOBRE ========== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <!-- "container" é uma classe comum para limitar a largura e centralizar -->
+      <h2 class="secao-titulo">Sobre Nós</h2>
+      <p class="secao-texto">
+        Nossa missão é cuidar da sua bicicleta como se fosse nossa. Sabemos que uma bike bem regulada faz toda a
+        diferença na experiência de pedalar, seja para treinos, lazer ou deslocamento diário. Por isso, oferecemos
+        serviços de manutenção e revisão com atenção, qualidade e compromisso para que você possa pedalar com segurança
+        e tranquilidade.
+      </p>
+    </div>
+    <div class="cards1">
+        <!-- Card 1 -->
+        <div class="card">
+          <h3 class="card-titulo">Mecânica especializada</h3>
+          <p class="card-texto">Melhores técnicas e conhecimentos para sua bike.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <h3 class="card-titulo">Mais segurança no pedal</h3>
+          <p class="card-texto">Sua bike segura para pedalar</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <h3 class="card-titulo">Atendimento de confiança</h3>
+          <p class="card-texto">Cuidado e transparência sempre</p>
+        </div>
+        <div class="card">
+          <h3 class="card-titulo">Melhor desempenho</h3>
+          <p class="card-texto">Sua bike pronta para render mais</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- ========== SEÇÃO SERVIÇOS ========== -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2 class="secao-titulo">Nossos Serviços</h2>
+
+      <!-- div com classe "cards": agrupa os 3 cards -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <h3 class="card-titulo">Revisão completa</h3>
+          <p class="card-texto">Verificação geral da bicicleta com ajustes e regulagens para garantir segurança e bom
+            funcionamento em cada detalhe.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <h3 class="card-titulo">Ajustes gerais</h3>
+          <p class="card-texto">Aperto de componentes, alinhamentos e pequenas regulagens para deixar sua bike pronta
+            para pedalar.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <h3 class="card-titulo">Troca de peças</h3>
+          <p class="card-texto">Substituição de peças com produtos de qualidade.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-titulo">Transparência</h3>
+          <p class="card-texto">Avaliação da bicicleta em frente ao cliente. Processo todo registrado em fotos. E
+            somente é trocado o necessário.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO CONTATO ========== -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="secao-titulo">Entre em Contato</h2>
+      <p class="secao-texto">
+        Ficou interessado? Entre em contato conosco e tire suas dúvidas.
+      </p>
+      <a href="mailto:contato@meusite.com" class="botao">Enviar E-mail</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <!-- 
+    footer: rodapé da página.
+    Geralmente contém copyright, links secundários, etc.
+  -->
+  <footer class="footer">
+    <p class="footer-texto">&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+    <!-- &copy; é o símbolo de copyright (©) em HTML -->
+  </footer>
+
+</body>
+
+</html>
