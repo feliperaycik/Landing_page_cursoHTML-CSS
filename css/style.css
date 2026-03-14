@@ -255,18 +255,26 @@ body {
 .card {
   flex: 1 1 280px;
   max-width: 200px;
-  background-color: grey;
+  background-color: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.651);
   /* box-shadow: sombra para dar efeito de "elevação" */
 }
 
+.card:hover { 
+  transform: scale(1.05); 
+}
+/* efeito de botão, card vem pra cima */
+.card1:hover { 
+  transform: scale(1.05); 
+}
+/* efeito de botão, card vem pra cima */
 .card1 {
   flex: 1 1 280px;
   height: 160px;
   max-width: 200px;
-  background-color: grey;
+  background-color: white;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.651);
@@ -275,7 +283,7 @@ body {
 
 .card-titulo {
   margin-bottom: 0.75rem;
-  color: white;
+  color: black;
   font-size: 1.25rem;
 }
 
